@@ -473,7 +473,7 @@ function ProjectCard({ project, delay }) {
         <p className="proj-desc">{project.desc}</p>
         {expanded && (
           <div className="proj-highlight">
-            <span className="proj-hl-label">// Key insight</span>
+            <span className="proj-hl-label">{"// Key insight"}</span>
             <p className="proj-hl-text">{project.highlight}</p>
           </div>
         )}
@@ -565,7 +565,7 @@ function ContactForm() {
   return (
     <div className="cf-wrap">
       <div className="cf-header">
-        <span className="cf-label">// Send a message</span>
+        <span className="cf-label">{"// Send a message"}</span>
         <p className="cf-hint">Fills in your details, picks a purpose, and lands directly in my inbox.</p>
       </div>
 
@@ -763,9 +763,9 @@ export default function App() {
         <div className="hero-inner">
           <div className="hero-sys-line">
             <span>SYS_INIT</span>
-            <span className="sys-sep">//</span>
+            <span className="sys-sep">{"//"}</span>
             <span>PORTFOLIO_v2.0</span>
-            <span className="sys-sep">//</span>
+            <span className="sys-sep">{"//"}</span>
             <span>READY</span>
           </div>
 
@@ -775,7 +775,7 @@ export default function App() {
           </h1>
 
           <div className="hero-typewriter" aria-live="polite">
-            <span className="tw-prefix">// </span>
+            <span className="tw-prefix">{"// "}</span>
             <span className="tw-text">{typeText}</span>
             <span className="tw-cursor">▌</span>
           </div>
@@ -969,7 +969,7 @@ export default function App() {
               <h2 className="section-h2">Technical<br /><em>Expertise</em></h2>
               <p>Technologies I use to build backend services, frontend interfaces, and mobile applications.</p>
               <div className="currently-learning">
-                <p className="learning-label">// Currently learning</p>
+                <p className="learning-label">{"// Currently learning"}</p>
                 {learning.map((item, i) => (
                   <LearningBar key={item.name} {...item} delay={i * 120} />
                 ))}
@@ -982,7 +982,7 @@ export default function App() {
                 ))}
               </div>
               <div className="tools-row">
-                <p className="tools-label">// Tools &amp; Practices</p>
+                <p className="tools-label">{"// Tools & Practices"}</p>
                 <div className="tools-chips">
                   {toolsAndSoft.map(t => <span key={t} className="tool-chip">{t}</span>)}
                 </div>
